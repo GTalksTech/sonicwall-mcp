@@ -1,0 +1,9 @@
+# Runtime dependencies for the SonicWall NSM MCP server.
+# Direct deps pinned here; the FULL transitive set is pinned in constraints.txt
+# (pip freeze of the tested venv). Install with:
+#     pip install -r requirements.txt -c constraints.txt
+# Versions are pinned at image build — never floating.
+fastmcp==3.4.7
+requests==2.34.2
+keyring==25.7.0
+uvicorn==0.52.4
