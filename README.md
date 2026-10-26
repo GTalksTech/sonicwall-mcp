@@ -131,8 +131,8 @@ registered only when `MCP_DEBUG_TOOLS=1`.
 ## Quick start (local)
 
 ```bash
-git clone <this repo>
-cd sonicwall-nsm-mcp
+git clone https://github.com/GTalksTech/sonicwall-mcp.git
+cd sonicwall-mcp
 python -m venv .venv
 . .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt -c constraints.txt
@@ -237,6 +237,17 @@ The container logs one structured JSON line per tool call to stdout.
   answer-shaped non-answer. Many hard-won API behaviors (boolean `limit`
   gates, CSV-in-JSON payloads, integer-encoded IPs, misspelled vendor fields)
   are documented in comments where they are handled.
+
+## Contributing
+
+Pull requests and issues are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md)
+first. The one rule that does not bend: this server stays read-only, so a
+pull request that adds a write to NSM or SonicOS will not be merged. New read
+tools, fixes, tests and documented NSM API quirks are all welcome.
+
+## See also
+
+A sibling server built on the same envelope contract: [GTalksTech/auvik-mcp](https://github.com/GTalksTech/auvik-mcp).
 
 ## License
 
