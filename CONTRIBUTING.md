@@ -67,8 +67,12 @@ has the ReadOnly role.
 
 ## Reporting a security issue
 
-Please do not open a public issue for a security problem. Email
-garrett@gtalkstech.com with the details and I will respond there.
+Please do not open a public issue for a security problem. Report it privately
+through GitHub instead: the repository's **Security** tab, then **Report a
+vulnerability**
+([direct link](https://github.com/GTalksTech/sonicwall-mcp/security/advisories/new)).
+Only you and the maintainer can see the report. If you cannot use GitHub,
+email garrett@gtalkstech.com.
 
 ## License
 
